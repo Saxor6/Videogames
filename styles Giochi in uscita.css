@@ -1,0 +1,261 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	background-image: linear-gradient(rgba(4,9,30,0.6), rgb(4,9,30,0.6)), url(Immagini/TBOIBanner.jpg);
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+}
+.separator{
+	border: 0.16vw solid black;
+}
+.monthslist {
+	height: 8vw;
+}
+
+main {
+	margin-top: 8vw;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.cardsRow {
+	display: flex;
+	flex-direction: row;
+	margin-top: 3.7vw;
+}
+
+.whitetext {
+	color: white;
+}
+
+.list {
+	color: white;
+	text-align: center;
+	list-style: none;
+}
+
+.cover {
+	width: 100%;
+	display: block;
+}
+
+.card {
+	transition: 0.3s;
+	margin-left: 5vw;
+	width: calc(27.5% - 1vw); /* Three cards per row with some spacing */
+    
+}
+
+	.card:hover {
+		box-shadow: 0 0.4vw 0.8vw 0 rgba(0, 0, 0, 0.2) !important;
+	}
+
+.container {
+	padding: 0.15vw 0.42vw;
+	height: 11.5vw;
+	
+}
+.container p {
+	text-align: center;
+}
+.header {
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.6), rgb(4,9,30,0.6)), url(Immagini/ZeldaBackgroundImage.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.releaseDate{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: xx-large;
+}
+ul {
+	font-size: xx-large;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left: 1.8vw;
+}
+
+a {
+	color: #c41446;
+	text-decoration: none;
+}
+
+h1, h2 {
+	font-size: xx-large;
+	text-align: center;
+	padding: 1vw;
+	margin: auto;
+}
+
+nav {
+	display: flex;
+	padding: 1.5% 14%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links {
+	text-align: center;
+	padding: 1vw;
+}
+
+	.links ul li {
+		list-style: none;
+		background-color: #c41446;
+		display: inline-block;
+		padding: 0.55vw 2.25vw;
+		position: relative;
+		font-family: fantasy;
+	}
+
+		.links ul li a {
+			text-decoration: none;
+			color: #13131a;
+			transition: 0.5s;
+		}
+
+		.links ul li::after {
+			content: '';
+			width: 0%;
+			height: 0.16vw;
+			background: #d1dedb;
+			display: block;
+			margin: auto;
+			transition: 0.5s;
+		}
+
+		.links ul li a:hover {
+			color: #d1dedb;
+		}
+
+		.links ul li:hover::after {
+			width: 100%;
+		}
+
+.months {
+	text-align: center;
+	font-size: 4.7vw;
+	color: white;
+	font-family: Algerian;
+}
+.data {
+	font-size:1.6vw;
+}
+p img {
+    margin-right: 0.5vw;
+	margin-bottom: 0.2vw;
+}
+img.steam{
+	content: url("Immagini/SteamLogo.png");
+	width:5.2vw;
+}
+img.ps4{
+	content: url("Immagini/PS4Logo.jpg");
+	width:5.2vw;
+}
+img.ps5{
+	content: url("Immagini/PS5Logo.jpg");
+	width:5.2vw;
+}
+img.xboxOne{
+	content: url("Immagini/XboxOneLogo.png");
+	width:5.2vw;
+}
+img.xboxSeries{
+	content: url("Immagini/XboxSeriesLogo.png");
+	width:6.3vw;
+}
+img.switch{
+	content: url("Immagini/SwitchLogo.png");
+	width:3.2vw;
+}
+@media only screen and (max-width: 768px) {
+	.cardsRow {
+	  flex-wrap: wrap;
+	  margin-top: 1.5vw;
+	}
+	.card {
+	  width: calc(50% - 20px); /* Two cards per row with margin */
+	  margin: 0 0.5vw 1vw 0.5vw;
+	}
+  }
+  
+@media only screen and (max-width: 480px) {
+	p{
+		margin-top: 3vw;
+	}
+	h1{
+		font-size: 6vw;
+	}
+	img.steam, img.ps4, img.ps5, img.xboxOne{
+		width:19.2vw;
+	}
+	img.xboxSeries{
+		width:20.2vw;
+	}
+	img.switch{
+		width:12.2vw;
+	}
+	.separator{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px; /* Adjust the height as needed */
+		background-color: black; /* Adjust the color as needed */
+	}
+	main {
+		margin-top: 25vw; /* Adjust as needed */
+	  }
+	header {
+		height: 17vw;
+		background-size: cover;
+		background-position: center;
+		padding: 20px 10px; /* Adjust padding */
+		
+	  }
+	
+	  .monthslist {
+		margin-top: -20px;
+		height: auto;
+		padding: 10px 0; /* Reduce padding */
+	  }
+	
+	  nav {
+		padding: 0;
+	  }
+	  .links ul li {
+		margin-bottom: 1.6vw; /* Add margin between items */
+	  }
+	  	  .links ul li {
+		padding: 0.55vw 2.25vw ;
+			font-size: 6vw; /* Further adjusted font size for even smaller devices */
+		  }
+	
+	  .months {
+		font-size: 40px; /* Adjust font size */
+	  }
+	
+	  .cover {
+		width: 93.7vw;
+		height: auto; /* Ensure images resize proportionally */
+	  }
+	
+	  .container {
+		height: 38vw; /* Allow containers to expand vertically */
+	  }
+	.card {
+	  width: calc(100% - 20px); /* One card per row with margin */
+	  margin: 0 0.5vw 1vw 0.5vw;
+	  margin-left: 2vw;
+	  margin-bottom: 5vw;
+	}
+  }
